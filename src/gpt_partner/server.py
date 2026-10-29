@@ -27,7 +27,7 @@ mcp = FastMCP(
     json_response=True,
     stateless_http=True,
     transport_security=TransportSecuritySettings(
-        allowed_hosts=["localhost", "127.0.0.1", "testserver", "*.vercel.app", "*.now.sh"],
+        enable_dns_rebinding_protection=False,
     ),
 )
 
